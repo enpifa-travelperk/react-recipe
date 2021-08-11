@@ -1,0 +1,35 @@
+.recipes {
+  margin: 0;
+  background-color: lightblue;
+  padding: 4%;
+}
+
+.recipes-list {
+  background-color: lightgreen;
+  padding: 3%;
+}
+
+.single-recipe {
+  background-color: mediumslateblue;
+  padding: 2%;
+  margin: 2%;
+}
+
+.new-recipe-form {
+  background-color: olive;
+  padding: 2%;
+}
+
+.form-unit {
+  display: block;
+  margin: 10px;
+}
+
+.form-label {
+  width: 20%;
+  margin: 10px;
+}
+
+.form-input {
+  width: 60%;
+}
