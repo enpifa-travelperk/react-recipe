@@ -35,6 +35,7 @@ const Update = () => {
         const payload = { ingredients: ingredients };
         const response = await axios.patch(url, payload);
         console.log(response);
+        // TODO: push/redirect to List
     }; 
 
     return (
