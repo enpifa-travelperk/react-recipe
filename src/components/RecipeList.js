@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Recipe from './Recipe';
-import './Recipes.css';
+import '../styles.css';
 
 const mockRecipeWithoutIngredients = {
     "name": "Pizza",
@@ -23,14 +23,26 @@ const mockGetRecipes = {
     data: [mockRecipeWithIngredients, mockRecipeWithoutIngredients]
 };
 
+const requestConfig = {
+    headers: {
+        // 'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+    }
+};
+
 const RecipeList = () => {
     const [state, setState] = useState([]);
 
     useEffect(() => {
         function getRecipes() {
-            // const recipes = await axios.get('http://127.0.0.1:8000/api/recipes/');
-            console.log("RECIPES", mockGetRecipes.data);
-            setState(mockGetRecipes.data)
+            try {
+                // const recipes = await axios.get('http://127.0.0.1:8000/api/recipes/', requestConfig);
+                // console.log("RECIPES", recipes);
+                console.log("RECIPES MOCK", mockGetRecipes.data);
+                setState(mockGetRecipes.data)
+            } catch (e) {
+                console.log("ERROR", e);
+            }
         }
         getRecipes();
         // setState(recipes);

@@ -1,7 +1,7 @@
 import React from 'react';
 import NewRecipeForm from './NewRecipeForm';
 import RecipeList from './RecipeList';
-import './Recipes.css';
+import '../styles.css';
 
 const Recipes = () => {
     return (

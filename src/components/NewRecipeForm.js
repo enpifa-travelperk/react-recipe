@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Recipes.css';
+import '../styles.css';
 
 const NewRecipeForm = () => {
     const initialState = {

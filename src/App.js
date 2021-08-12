@@ -1,11 +1,13 @@
 import './App.css';
-import Recipes from './Recipes';
+import NavBar from './components/NavBar';
+import Routes from './components/Routes';
 
 function App() {
   return (
     <div className="App">
       <p1>React exercise from Enric Piferrer Torres</p1>
-      <Recipes />
+      <NavBar />
+      <Routes />
     </div>
   );
 }

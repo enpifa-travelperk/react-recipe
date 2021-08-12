@@ -1,5 +1,5 @@
 import React from 'react';
-import './Recipes.css';
+import '../styles.css';
 
 const Recipe = (props) => {
     const {data} = props;
