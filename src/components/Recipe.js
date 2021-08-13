@@ -10,7 +10,7 @@ const Recipe = (props) => {
             <h3>Name: {name}</h3>
             <h4>Description: {description}</h4>
             <h4>Ingredients:</h4>
-            {ingredients.map(ingredient => <li>{ingredient.name}</li>)}
+            {ingredients.map(ingredient => <li key={ingredient.name}>{ingredient.name}</li>)}
         </div>
     );
 };

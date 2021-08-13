@@ -54,7 +54,7 @@ const RecipeList = () => {
     return (
         <div className='recipes-list'>
             <h2>List of all the recipes:</h2>
-            {state.map(recipe => <Recipe data={recipe} />)}
+            {state.map(recipe => <Recipe key={recipe.name} data={recipe} />)}
         </div>
     );
 }
